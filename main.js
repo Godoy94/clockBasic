@@ -1,13 +1,13 @@
 var interval = setInterval(function clock(){
     var data = new Date;
-    var horas = data.getHours();
-    var minutos = data.getMinutes();
-    var segundos = data.getSeconds();
+    var hours = data.getHours();
+    var minutes = data.getMinutes();
+    var seconds = data.getSeconds();
 
-    var escreveHoras = document.getElementById('horas');
-    escreveHoras.innerHTML = horas;
-    var escreveMinutos = document.getElementById('minutos');
-    escreveMinutos.innerHTML = minutos;
-    var escreveSegundos = document.getElementById('segundos');
-    escreveSegundos.innerHTML = segundos;
-}, 1000)
+    var writeHours = document.getElementById('horas');
+    writeHours.innerHTML = hours;
+    var writeMinutes = document.getElementById('minutos');
+    writeMinutes.innerHTML = minutes;
+    var writeSeconds = document.getElementById('segundos');
+    writeSeconds.innerHTML = seconds;
+}, 100)
