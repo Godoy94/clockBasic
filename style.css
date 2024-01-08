@@ -1,0 +1,53 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Tektur', sans-serif;
+    background-color: #99c2ae;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 38px;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clock-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    margin-top: 80px;
+}
+
+.clock-display {
+    display: flex;
+    align-items: center;
+}
+
+.clock-content {
+    border: 3px solid #cce1d7;
+    border-radius: 5px;
+    padding: 50px;
+    box-shadow: 10px 10px 5px 0px #e5f0eb;
+    background-color: #b2d1c2;
+    margin: 20px;
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}

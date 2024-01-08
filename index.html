@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tektur&display=swap"
+      rel="stylesheet"
+    />
     <title>Clock Basic</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <div class="clock-container">
-            <div class="clock-title">
-                <h3>Horário de Brasilia</h3>
-            </div>
-            <div class="clock-display">
-                <div class="clock-hours" id="horas"></div>
-                <span>:</span>
-                <div class="clock-minutes" id="minutos"></div>
-                <span>:</span>
-                <div class="clock-seconds" id="segundos"></div>
-            </div>
+      <div class="clock-title">
+        <h1>Horário de Brasilia</h1>
+      </div>
+      <div class="clock-container">
+        <div class="clock-display">
+          <div class="clock-hours clock-content" id="hours"></div>
+          <span>:</span>
+          <div class="clock-minutes clock-content" id="minutes"></div>
+          <span>:</span>
+          <div class="clock-seconds clock-content" id="seconds"></div>
         </div>
+      </div>
     </div>
     <script src="main.js"></script>
-</body>
-
+  </body>
 </html>

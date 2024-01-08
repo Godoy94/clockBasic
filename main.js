@@ -1,16 +1,30 @@
 var interval = setInterval(function clock(){
-    var data = new Date;
-    var hours = data.getHours();
-    var minutes = data.getMinutes();
-    var seconds = data.getSeconds();
+    var date = new Date;
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
+    var seconds = date.getSeconds();
 
-    var writeHours = document.getElementById('horas');
-    writeHours.innerHTML = hours;
+    var writeHours = document.getElementById('hours');
+    var writeMinutes = document.getElementById('minutes');
+    var writeSeconds = document.getElementById('seconds');
 
-    var writeMinutes = document.getElementById('minutos');
-    writeMinutes.innerHTML = minutes;
+    if(hours < 10) {
+        console.log("Cai no if")
+        writeHours.innerHTML = `0${hours}`
+    } else {
+        writeHours.innerHTML = hours;
+    }
 
-    var writeSeconds = document.getElementById('segundos');
-    writeSeconds.innerHTML = seconds;
+    if(minutes < 10) {
+        writeMinutes.innerHTML = `0${minutes}`
+    } else {
+        writeMinutes.innerHTML = minutes;
+    }
+
+    if(seconds < 10) {
+        writeSeconds.innerHTML = `0${seconds}`;
+    } else {
+        writeSeconds.innerHTML = seconds;
+    }
     
 }, 100)
